@@ -12,10 +12,11 @@ A posture coach for Mac. No camera, no wearable, no account, and nothing ever le
 
 ## What it does
 
-SlouchGuard reads the motion sensors already built into AirPods Pro, AirPods Max, AirPods (3rd generation and later) and Beats Fit Pro. Calibrate once while sitting tall. When your head drifts forward past that baseline and stays there, you get a gentle notification. Sit back up and the menu bar icon turns green again.
+SlouchGuard reads the motion sensors already built into AirPods Pro, AirPods Max, AirPods (3rd generation and later) and Beats Fit Pro. Calibrate once while sitting tall. When your head drifts too far forward (slouching) **or too far back (lounging)** and stays there, you get a gentle notification. Return to good posture and the menu bar icon turns green again.
 
 - **Green seated figure** in the menu bar: you are sitting tall
-- **Red seated figure**: you are slouching right now
+- **Red seated figure**: you are slouching forward or leaning too far back
+- Catches both directions: forward slouch and backward lounge, each with its own threshold
 - Notifications tuned to nudge, not nag: a 10 second grace period and a 60 second cooldown between alerts
 - Four sensitivity presets, from relaxed (18°) to maximum (5°)
 - An ambient pill that hugs your MacBook notch and glows your posture color

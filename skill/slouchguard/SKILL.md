@@ -41,10 +41,12 @@ If installed but not running: `open /Applications/SlouchGuard.app`
 Stats live in `~/Library/Application Support/SlouchGuard/stats/` as one JSON file
 per day named `YYYY-MM-DD.json` with these keys:
 
-- `postureScore`: 0 to 100, share of monitored time spent sitting tall (100 = never slouched)
-- `slouchCount`: number of distinct slouches (5 seconds or longer)
-- `totalSlouchSeconds`: total time spent slouching
-- `corrections`: times the user sat back up after slouching
+- `postureScore`: 0 to 100, share of monitored time in good posture (100 = never slouched or lounged)
+- `slouchCount`: number of distinct slouches — leaning forward (5 seconds or longer)
+- `totalSlouchSeconds`: total time spent slouching forward
+- `loungeCount`: number of distinct lounges — leaning back too far (5 seconds or longer)
+- `totalLoungeSeconds`: total time spent leaning back
+- `corrections`: times the user returned to good posture (from either direction)
 - `alerts`: notifications sent
 - `monitoredSeconds`: total time AirPods were in and monitoring was active
 
