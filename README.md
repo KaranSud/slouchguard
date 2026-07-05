@@ -29,9 +29,11 @@ SlouchGuard reads the motion sensors already built into AirPods Pro, AirPods Max
 | Live posture monitoring & alerts | ✓ | ✓ |
 | Menu bar + notch indicator | ✓ | ✓ |
 | Sensitivity presets | ✓ | ✓ |
-| Posture history & trends | | ✓ |
+| Posture history with daily chart | | ✓ |
+| Insights: streaks, 7/30-day averages, trend, best/worst day, slouch-vs-lounge split | | ✓ |
 | CSV export of your stats | | ✓ |
 | Custom sensitivity threshold | | ✓ |
+| Custom alert timing (grace period & cooldown) | | ✓ |
 | Notch size customization | | ✓ |
 
 Pro unlocks with a license key that is verified **offline** — nothing leaves your Mac. Open the menu → **Unlock Pro…** to paste a key or buy one. Everything in the free tier stays free.
@@ -83,7 +85,8 @@ Then, in any Claude Code session:
 | Pause / Resume | Stops and restarts monitoring |
 | Sensitivity | Low 18° · Medium 12° · High 8° · Maximum 5° · Custom (Pro) |
 | Notch Indicator | Always show · Only with Claude Code · Hidden · Size (Pro) |
-| Posture History… | Trends, daily chart and CSV export (Pro) |
+| Alert Timing | Grace period & cooldown presets (Pro) |
+| Posture History… | Insights, trends, daily chart and CSV export (Pro) |
 | Start at Login | Registers SlouchGuard as a login item |
 | Unlock Pro… | Paste a license key or buy Pro |
 | Today's line | Live posture score, slouch count and minutes slouched |
