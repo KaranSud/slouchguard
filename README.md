@@ -30,6 +30,7 @@ SlouchGuard reads the motion sensors already built into AirPods Pro, AirPods Max
 | Menu bar + notch indicator | ✓ | ✓ |
 | Sensitivity presets | ✓ | ✓ |
 | Posture history with daily chart | | ✓ |
+| Adaptive auto-calibration (learns your true posture and self-corrects a rough setup) | | ✓ |
 | Insights: streaks, 7/30-day averages, trend, best/worst day, slouch-vs-lounge split | | ✓ |
 | Time-of-day insight: the hour you slouch most | | ✓ |
 | Break & movement reminders (stand up after sitting too long) | | ✓ |
@@ -78,6 +79,7 @@ Then, in any Claude Code session:
 | Item | What it does |
 |---|---|
 | Calibrate | Records your good posture as the baseline (sit the way you sit when you sit well) |
+| Auto-Calibrate | Continuously refines your baseline from how you actually sit (Pro) |
 | Pause / Resume | Stops and restarts monitoring |
 | Sensitivity | Low 18° · Medium 12° · High 8° · Maximum 5° · Custom (Pro) |
 | Notch Indicator | Always show · Only with Claude Code · Hidden · Size (Pro) |
