@@ -49,6 +49,8 @@ per day named `YYYY-MM-DD.json` with these keys:
 - `corrections`: times the user returned to good posture (from either direction)
 - `alerts`: notifications sent
 - `monitoredSeconds`: total time AirPods were in and monitoring was active
+- `hourlyPoorSeconds`: 24-element array (index = hour of day) of poor-posture seconds;
+  the highest index is the hour the user slouches/lounges most (a Pro "time of day" insight)
 
 To answer "how is my posture today", read today's file. For "this week", read the
 last 7 files and compare. Summarize conversationally: lead with the score, mention

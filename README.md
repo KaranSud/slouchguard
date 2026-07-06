@@ -31,6 +31,8 @@ SlouchGuard reads the motion sensors already built into AirPods Pro, AirPods Max
 | Sensitivity presets | ✓ | ✓ |
 | Posture history with daily chart | | ✓ |
 | Insights: streaks, 7/30-day averages, trend, best/worst day, slouch-vs-lounge split | | ✓ |
+| Time-of-day insight: the hour you slouch most | | ✓ |
+| Break & movement reminders (stand up after sitting too long) | | ✓ |
 | CSV export of your stats | | ✓ |
 | Custom sensitivity threshold | | ✓ |
 | Custom alert timing (grace period & cooldown) | | ✓ |
@@ -54,15 +56,9 @@ Prefer manual? Grab `SlouchGuard.zip` from [Releases](https://github.com/KaranSu
 
 ## How it works
 
-Apple ships a head tracking API (`CMHeadphoneMotionManager`) that streams pitch, roll and yaw from supported AirPods at about 25Hz. SlouchGuard smooths that stream, compares your head pitch against your calibrated baseline, and runs a small state machine:
+Your AirPods already carry precision motion sensors. SlouchGuard reads them to understand how you're actually sitting, measures your live posture against your own calibrated baseline, and steps in only when you've genuinely drifted — one gentle nudge, never a nag storm. Sit back up and you're green again.
 
-1. Head drifts past your threshold: the icon turns red.
-2. Stay there past the grace period: one notification fires.
-3. Sit back up: the app logs a correction and the icon turns green.
-
-A cooldown stops it from nagging you twice in the same minute, and hysteresis around the threshold stops the icon from flickering at the boundary.
-
-Stats are written as one human readable JSON file per day in `~/Library/Application Support/SlouchGuard/stats/`, which is what makes the Claude Code skill below possible.
+Everything runs on your Mac. Your daily stats live in a simple, open, human-readable format at `~/Library/Application Support/SlouchGuard/stats/` — your data stays yours, and it's what powers the Claude Code skill below.
 
 ## Claude Code skill
 
@@ -86,7 +82,8 @@ Then, in any Claude Code session:
 | Sensitivity | Low 18° · Medium 12° · High 8° · Maximum 5° · Custom (Pro) |
 | Notch Indicator | Always show · Only with Claude Code · Hidden · Size (Pro) |
 | Alert Timing | Grace period & cooldown presets (Pro) |
-| Posture History… | Insights, trends, daily chart and CSV export (Pro) |
+| Break Reminders | Stand-up nudge after 30 / 45 / 60 min of sitting (Pro) |
+| Posture History… | Insights, trends, time-of-day, daily chart and CSV export (Pro) |
 | Start at Login | Registers SlouchGuard as a login item |
 | Unlock Pro… | Paste a license key or buy Pro |
 | Today's line | Live posture score, slouch count and minutes slouched |
