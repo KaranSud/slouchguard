@@ -28,8 +28,8 @@ fi
 rm -rf "$APP_PATH"
 ditto -x -k "$TMP_DIR/SlouchGuard.zip" /Applications/
 
-# The app is open source and ad-hoc signed (no paid Apple Developer cert), so
-# clear the Gatekeeper quarantine flag that downloads pick up.
+# The app is ad-hoc signed (no paid Apple Developer cert), so clear the
+# Gatekeeper quarantine flag that downloads pick up.
 xattr -dr com.apple.quarantine "$APP_PATH" 2>/dev/null || true
 
 open "$APP_PATH"

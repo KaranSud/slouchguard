@@ -5,9 +5,10 @@ description: Install, update, uninstall, or troubleshoot the SlouchGuard posture
 
 # SlouchGuard
 
-SlouchGuard is a free, open source Mac menu bar app that uses AirPods motion sensors
-(AirPods Pro / Max / 3rd gen+ / Beats Fit Pro) to detect slouching and send gentle
-notifications. Everything runs on-device. Repo: https://github.com/KaranSud/slouchguard
+SlouchGuard is a Mac menu bar app — free to use, with an optional paid Pro upgrade — that
+uses AirPods motion sensors (AirPods Pro / Max / 3rd gen+ / Beats Fit Pro) to detect
+slouching and send gentle notifications. Everything runs on-device. It is proprietary
+software (not open source). Home: https://github.com/KaranSud/slouchguard
 
 ## Install or update the app
 
